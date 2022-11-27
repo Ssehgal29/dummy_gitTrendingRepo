@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">TrendingGitRepos</string>
     <string name="press_back_again">Press back again to exit.</string>
+    <string name="no_internet">No Internet</string>
+    <string name="something_wrong">something went wrong</string>
+    <string name="search_repos">search repos by name…</string>
 </resources>
