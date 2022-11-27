@@ -12,11 +12,11 @@ import java.util.concurrent.TimeUnit
 class RetrofitClient {
 
     companion object {
-        const val BASE_URL = "https://github.com/trending/"
+        const val BASE_URL = "https://github.com/"
     }
 
     fun <Api> buildApi(
-        api: Class<Api>, authToken: String? = null
+        api: Class<Api>
     ): Api {
         return Retrofit.Builder().baseUrl(BASE_URL).addConverterFactory(
             GsonConverterFactory.create(

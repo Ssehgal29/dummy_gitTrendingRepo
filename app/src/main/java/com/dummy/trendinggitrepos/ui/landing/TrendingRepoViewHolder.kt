@@ -1,4 +1,7 @@
 package com.dummy.trendinggitrepos.ui.landing
 
-class TrendingRepoViewHolder {
-}
+import androidx.recyclerview.widget.RecyclerView
+import com.dummy.trendinggitrepos.databinding.TrendingRepoBinding
+
+class TrendingRepoViewHolder(var trendingRepo: TrendingRepoBinding) :
+    RecyclerView.ViewHolder(trendingRepo.root) {}

@@ -5,4 +5,8 @@ import com.dummy.trendinggitrepos.network.retrofit.ApiService
 
 class LandingRepository(private val apiService: ApiService) : BaseRepository() {
 
+
+    suspend fun getTrendingRepos() = safeApiCall {
+        apiService.getTrendingRepos()
+    }
 }
